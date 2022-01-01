@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    margin: 5% 5% 1.6% 5%;
+    position: relative;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgb(224, 221, 221);
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 42.5px;
+    margin-bottom: 25px;
+}
+
+/* logo */
+.logo img{
+   max-width: 220px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+}
+.design{
+    width: 60%;
+}
+.design img{
+    width: 100%;
+}
+.content{
+    width: 40%;
+    padding: 50px;
+    padding-right: 0;
+}
+.btn{
+    width: 190px;
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    color: hsl(257, 40%, 49%);
+    margin-top: 30px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.548);
+}
+.btn:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
+.social-icons{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+.social-icons span{
+    font-size: 20px;
+    display: inline-block;
+    border: 2px solid  rgb(224, 221, 221);
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.social-icons span:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+.social-icons .slogo1{
+    padding: 10px 15px;
+}
+.social-icons .slogo2{
+    padding: 10px;
+}
+.social-icons .slogo3{
+    padding: 10px 12px;
+}
+
+
+@media screen and (max-width:768px)
+{
+    body{
+        background-image: url('../images/bg-mobile.svg');
+        background-size: 100%;
+        margin: 10%;
+    }
+    h1{
+        font-size: 26px;
+    }
+    .logo img{
+        width: 140px;
+    }
+    .wrapper{
+        flex-direction: column;
+        margin: 0;
+        padding-top:20%;
+    }
+    .design{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        padding-top: 20%;
+    }
+    .btn{
+        width: 210px;
+        height: 40px;
+        font-size: 16px;
+        box-shadow: none;
+    }
+    .social-icons{
+        position: static;
+    }
+    .social-icons span{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .social-icons .slogo1{
+        padding: 8px 11px;
+    }
+    .social-icons .slogo2{
+        padding: 8px;
+    }
+    .social-icons .slogo3{
+        padding: 8px 10px;
+    }
+}
